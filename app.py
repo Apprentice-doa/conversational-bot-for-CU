@@ -13,7 +13,7 @@ print(st.__version__)
 # Loading Image using PIL
 im = Image.open('content/cubots.png')
 # Adding Image to web app
-st.set_page_config(page_title="CUBot", page_icon = im)
+st.set_page_config(page_title="Nora", page_icon = im)
 
 img_path = Path.joinpath(Path.cwd(),'content')
 artifacts_path = Path.joinpath(Path.cwd(),'model_artifacts')
@@ -64,7 +64,7 @@ def botResponse(user_input):
     # Get session state and update previous_pred
     
     if ss.is_startup:
-        response = "Hi, I am CUBot and I'm happy to have you here. \nHow can I help you?"
+        response = "Hi, I am Nora and I'm happy to have you here. \nHow can I help you?"
         ss.is_startup = False
         return response
     else:
@@ -77,16 +77,16 @@ def get_text():
     df_input = pd.DataFrame([input_text],columns=['questions'])
     return df_input 
 
-col1, mid, col2 = st.columns([1,14,30])
+col1, mid, col2 = st.columns([1,14,50])
 with col1:
     st.title("""
-CUBot """)
+Nora """)
     
 with col2:
     st.image(bot, width=60) 
 
 st.write("""
-CUBot is the Christian Union AI-based chatbot developed to help you with information about the fellowship.""")
+Nora is the Christian Union AI-based chatbot developed to help you with information about the fellowship.""")
 
 st.sidebar.title("CU")
 st.sidebar.image(bots)
@@ -102,7 +102,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 user_input = get_text()
     
 response = botResponse(user_input)
-st.text_area("CUBot:" + "\n", response)
+st.text_area("Nora:" + "\n", response)
 
 st.button("Submit")
 
