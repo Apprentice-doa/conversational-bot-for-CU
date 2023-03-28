@@ -1,31 +1,32 @@
 response,labels
-"Hello, I'm sure you love tennis",11
+"Hello, good to see you here",11
 Happy to have you here,11
 Good to see you again,11
 "Hi there, how can I help?",11
-"Hi, I'm  Racky",16
-I'm Racky ,16
-Call me Racky,16
-Have a lovely tennis!,3
-Have a nice tennis playing time,3
-Enjoy the game!,3
-Have fun with the balls,3
+"Hi, I'm  CUbot",16
+I'm CUBot ,16
+My name is CUBot,16
+Have a lovely day.,3
+See you in fellowship.,3
+Have a nice day.,3
+See you some other time.,3
+See you later.,3
 Happy to help!,13
-Any time!,13
-My pleasure,13
-Do enjoy the game,13
-Have fun on tennis court,13
+Happy to help any time!,13
+It is my pleasure.,13
+You are welcome.,13
+I would be glad to do this some other time.,13
 "Sorry, kindly rephrase the question",1
 "Sorry, can't understand you",1
 Please give me more information,1
 Not sure I understand,1
-I can guide you through how to get started with tennis,8
-"I know quiet some rules in tennis, game types, top players and many more",0
-"I know some key words like tie-break, love, advantage and Ace to mention a few",0
-Ask me a question about tennis and I will answer to the best of my knowledge,0
-"As at January 2020, 
-Men: Novak Djokovic, Rafael Nadal, Dominic Thiem, Roger Federer and Daniil Medvedev.  
-Females: Asheleigh Barty, Simona Halep, Karolina Pliskova, Sofia Ofia Kenin and Elina Svitolina",15
+I can give you information about the Christian Union fellowship.,8
+Freshers welcome is a programme organised for all freshers in the University of Benin,5
+"I know some key words like tie-break, love, advantage and Ace to mention a few",5
+Ask me a question about tennis and I will answer to the best of my knowledge,5
+"Kamdela Mandeke is the theme for this year's freshers welcome in the Christian Union. 
+If you want to know what Kamdela Mandeke means, kindly come to freshers welcome 2023.  
+The meaning of Kamdela Mandeke will be revealed during freshers welcome programme",14
 "A ball must land within bounds for play to continue; if a player hits the ball outside of bounds, this results in the loss of the point for them.
 Players/teams cannot touch the net or posts or cross onto the opponent's side.
 Players/teams cannot carry the ball or catch it with the racquet.
@@ -35,7 +36,7 @@ A player that does not return a live ball before it bounces twice loses the poin
 If the ball hits or touches the players, that counts as a penalty.
 If the racquet leaves the hand or verbal abuse occurs, a penalty is given.
 Any ball that bounces on the lines of boundary are considered good.
-A serve must bounce first before the receiving player can return it. ",5
+A serve must bounce first before the receiving player can return it. ",0
 "Tennis shoes, Tennis clothes, Tennis Ball, Tennis headgear, Water bottles, Towels, Sun cream, Sunglasses, Wrist bands and Kit bag",6
 "Baseline - The baselines are the lines on either end of the court that determines the boundaries of play going lengthwise. They are also where a player serves behind.
 Center Mark - The center mark determines the two halves of the tennis court. It mainly helps with service to determine where a player should stand prior to serving.
@@ -51,7 +52,7 @@ Let - A let is a re-do given to a player who serves although the ball hits the n
 Order of Service - The player/team who wins the toss serves first (team that wins chooses which player serves). If playing singles matches, players alternate between serving and receiving every game. If playing doubles matches, teams alternate between serving and receiving every game, with each player on a team getting the chance to serve before the cycle repeats.
 Switching Sides - Players/teams switch sides for every odd-numbered game (so, games 3, 5, 7 etc.)",10
 A tennis game can either be Singles or Doubles. Singles type involve a player playing against another player while Doubles type invlove a team of 2 players playing against another team of 2 players,12
-"If a score of 6-6 is reached and tie-break rules are used, a tie-break game is played in order to determine which player wins the set. For a tie-break game, the goal is to reach 7 points first with a lead of at least 2, and doing so results in the win of the set. The player who serves first is the player who would normally serve after 6-6, or 12 games.",14
+"If a score of 6-6 is reached and tie-break rules are used, a tie-break game is played in order to determine which player wins the set. For a tie-break game, the goal is to reach 7 points first with a lead of at least 2, and doing so results in the win of the set. The player who serves first is the player who would normally serve after 6-6, or 12 games.",15
 "Points - Smallest unit of measurement. Points increment from Love(0)-15-30-40-game.
 Games - Games consist of 4 points each, and is won when a player reaches 4 points with at least a 2 point advantage.
 Sets - A set consists of 6 games and is won by the player/team who reaches 6 games first with least a 2 point lead.
