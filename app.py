@@ -7,7 +7,6 @@ from pathlib import Path
 import preprocessor as p
 from PIL import Image
 import SessionState
-import speech_recognition as sr
 #import streamlit_webrtc as webrtc
 
 print(st.__version__)
