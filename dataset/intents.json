@@ -1,9 +1,9 @@
 {"intents": [
   {"tag": "start_conversation",
-   "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
-   "responses": ["Hello, I'm sure you love tennis", "Happy to have you here", "Good to see you again", "Hi there, how can I help?"],
-   "context": [""]
-  },
+  "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
+  "responses": ["Hello, good to see you here.\nI'm Nora, how can I help you?", "Happy to have you here.\nI'm Nora, how can I help you?","Hi there.\nI'm Nora, how can I help you?"],
+  "context": [""]
+ },
 
   {"tag": "what_are_you",
   "patterns": ["What is your name?", "what are you?", "who are you?","your name pls?"],
