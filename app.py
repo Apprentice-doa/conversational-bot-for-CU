@@ -88,7 +88,7 @@ with col2:
 st.write("""
 Nora is the Christian Union AI-based chatbot developed to help you with information about the fellowship.""")
 
-st.sidebar.title("CU")
+st.sidebar.title("The Christian Union UNIBEN/UBTH")
 st.sidebar.image(bots)
 
 hide_default_format = """
