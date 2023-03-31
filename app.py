@@ -9,19 +9,18 @@ from PIL import Image
 import SessionState
 #import streamlit_webrtc as webrtc
 
-print(st.__version__)
 # Loading Image using PIL
 im = Image.open('content/cubots.png')
 # Adding Image to web app
 st.set_page_config(page_title="Nora", page_icon = im)
 
 img_path = Path.joinpath(Path.cwd(),'content')
-artifacts_path = Path.joinpath(Path.cwd(),'model_artifacts')
+#artifacts_path = Path.joinpath(Path.cwd(),'model_artifacts')
 datasets_path = Path.joinpath(Path.cwd(),'dataset')
 
 #load images 
-bot = Image.open(Path.joinpath(img_path,'bot.png'))
-bots = Image.open(Path.joinpath(img_path,'cubots.png'))
+bot = Image.open(Path.joinpath(img_path,'robot.png'))
+#bots = Image.open(Path.joinpath(img_path,'cubots.png'))
 
 
 model = load_model('model-v1.h5')
@@ -31,9 +30,12 @@ vocab = joblib.load('vocab.pkl')
 df2 = pd.read_csv(Path.joinpath(datasets_path,'response.csv'))
 ss = SessionState.get_session_state(is_startup=True, previous_pred=0)
 
+#@st.cache(show_spinner=False)
+
 def get_pred(model,encoded_input):
     pred = np.argmax(model.predict(encoded_input))
     return pred
+
 
 def bot_precausion(df_input,pred):
     words = df_input.questions[0].split()
@@ -41,14 +43,17 @@ def bot_precausion(df_input,pred):
         pred = 1
     return pred
 
+
 def get_response(df2,pred):
     upper_bound = df2.groupby('labels').get_group(pred).shape[0]
     r = np.random.randint(0,upper_bound)
     responses = list(df2.groupby('labels').get_group(pred).response)
     return responses[r]
 
+#@st.cache(show_spinner=False)
 def bot_response(response,):
     return response
+
 
 def botResponse(user_input):
     df_input = user_input
@@ -69,7 +74,7 @@ def botResponse(user_input):
         return response
     else:
         return response
-    
+ 
 def get_text():
 # read input from text
     input_text  =st.text_input("You: ", key='text_input', max_chars=None, placeholder="type here")
@@ -88,8 +93,8 @@ with col2:
 st.write("""
 Nora is the Christian Union AI-based chatbot developed to help you with information about the fellowship.""")
 
-st.sidebar.title("The Christian Union UNIBEN/UBTH")
-st.sidebar.image(bots)
+#st.sidebar.title("The Christian Union UNIBEN/UBTH")
+#st.sidebar.image(bots)
 
 hide_default_format = """
        <style>
