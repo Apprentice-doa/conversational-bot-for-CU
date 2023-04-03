@@ -7,6 +7,7 @@ from pathlib import Path
 import preprocessor as p
 from PIL import Image
 import SessionState
+nltk.download('wordnet')
 
 # Loading Image using PIL
 im = Image.open('content/cubots.png')
