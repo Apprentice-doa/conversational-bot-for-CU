@@ -7,7 +7,6 @@ from pathlib import Path
 import preprocessor as p
 from PIL import Image
 import SessionState
-#import streamlit_webrtc as webrtc
 
 # Loading Image using PIL
 im = Image.open('content/cubots.png')
@@ -30,8 +29,6 @@ vocab = joblib.load('vocab.pkl')
 df2 = pd.read_csv(Path.joinpath(datasets_path,'response.csv'))
 ss = SessionState.get_session_state(is_startup=True, previous_pred=0)
 
-#@st.cache(show_spinner=False)
-
 def get_pred(model,encoded_input):
     pred = np.argmax(model.predict(encoded_input))
     return pred
@@ -43,17 +40,14 @@ def bot_precausion(df_input,pred):
         pred = 1
     return pred
 
-
 def get_response(df2,pred):
     upper_bound = df2.groupby('labels').get_group(pred).shape[0]
     r = np.random.randint(0,upper_bound)
     responses = list(df2.groupby('labels').get_group(pred).response)
     return responses[r]
 
-#@st.cache(show_spinner=False)
 def bot_response(response,):
     return response
-
 
 def botResponse(user_input):
     df_input = user_input
