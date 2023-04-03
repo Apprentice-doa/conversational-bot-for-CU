@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import nltk
 from keras.models import load_model
 from pathlib import Path 
 import preprocessor as p
